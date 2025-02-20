@@ -5,6 +5,8 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 import psycopg2
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+print(app.template_folder)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ricambio:a07Rnun4mRgb3fHrCrayH1KM62HFDDqV@dpg-curqd0gfnakc73erqm20-a.frankfurt-postgres.render.com/uffici_db_w4w1'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'supersegreto'

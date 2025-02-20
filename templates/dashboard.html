@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Dashboard</h2>
+<p>Benvenuto, {{ user.username }}!</p>
+<div class="card p-3">
+    <h4>Statistiche</h4>
+    <p>Numero totale di uffici: <strong>10</strong></p>
+    <p>Numero di dipendenti: <strong>50</strong></p>
+</div>
+{% endblock %}
